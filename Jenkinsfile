@@ -2,12 +2,16 @@ pipeline {
     agent any
 
     evironment {
-        GITHUB_URL = ""
+        GITHUB_URL = "https://github.com/dinhdangkhoa0201/list-web-backend.git"
+        GITHUB_CREDENTIAL = credentials("github-dinhdangkhoa0201")
     }
 
-    stages("Clone Code") {
-        stage {
-
+    stages {
+        stage("Clone Code") {
+            step {
+                echo "Github url: ${GITHUB_URL}"
+                echo "Github username: ${GITHUB_CREDENTIAL_USR}"
+            }
         }
     }
 }
