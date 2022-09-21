@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    evironment {
+    environment {
         GITHUB_URL = "https://github.com/dinhdangkhoa0201/list-web-backend.git"
         GITHUB_CREDENTIAL = credentials("github-dinhdangkhoa0201")
     }
